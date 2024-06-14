@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 #  object of the class
 app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():
-  return "<p>Hello, ArIsh!</p>"
+def hello_ArIsh():
+  return render_template('home.html')
 
 
 print(__name__)
